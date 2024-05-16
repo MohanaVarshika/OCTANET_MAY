@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-image: url(https://wallpaperaccess.com/full/1429588.jpg);
+    background-size: cover;
+    background-position: center;
+}
+header{
+    width:100%;
+    position:sticky;
+    top:0;
+    z-index: 1;
+    background:transparent;
+}
+
+header.container{
+    height:10vh;
+    width:100%;
+    margin:0 auto;
+    padding:0 50px;
+}
+.logo{
+    display:flex;
+    gap:14px;
+    align-items:center;
+    margin-left: 70px;
+}
+.logo img{
+    height:40px;
+    width:60px;
+    
+}
+.logo p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:20px;
+    font-weight:550;
+    color:white;
+    cursor:default;
+}
+a{
+    text-decoration:none;
+    color:white;
+    margin-right: 40px;
+}
+ul{
+    display:flex;
+    gap:14px;
+    list-style:none ;
+}
+li{
+    font-size:20px;
+
+}
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items:center;
+   padding:14px;
+}
+.main{
+    width:100%;
+    height:90vh;
+    position:absolute;
+}
+.main img{
+    display:block;
+    margin:auto;
+    height: 100%;
+    filter:drop-shadow(20px 20px 40px rgba(0, 0, 0, 0.858));
+    width:500px;
+}
+
+.content{
+    width:27%;
+    height:100%;
+    display:block;
+    margin:auto;
+    position:absolute;
+    top:0;
+    left:0;
+    margin-left:553px;
+    margin-top:50px;
+}
+.content.container1{
+    justify-content: center;
+    display:flex;
+    flex-direction:column;
+    width:250px;
+    margin:auto;
+    height:100%;
+}  
+
+.todo{
+    cursor:url("https://i.pinimg.com/236x/e6/f2/1a/e6f21a64418f53fb88697a688dc89424.jpg") 6 19,auto;
+    display:flex;
+    padding:14px;
+}
+.todo_value{
+    cursor:inherit;
+    background:transparent;
+    border:none;
+    outline:none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    flex-grow: 1;
+    border-bottom:2px solid green;
+}
+.todo_checkbox{
+    cursor:inherit;
+
+}   
+.todo:has(.todo_checkbox:checked){
+        color:rgba(0, 128, 0, 0.143);
+        background:rgba(0, 128, 0, 0.195);
+        text-decoration: line-through 1.5px;
+}
